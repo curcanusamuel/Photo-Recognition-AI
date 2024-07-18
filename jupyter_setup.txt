@@ -1,0 +1,25 @@
+﻿Anaconda + Jupyter Setup
+
+    1. Download and install Anaconda https://docs.anaconda.com/anaconda/install/windows/
+    2. Optional - Create a requirements file to have the standard setup. Copy the lines below in a text file and name it requirements.txt. These libraries will install automatically when creating the environment.
+
+jupyterlab
+matplotlib
+seaborn
+numpy
+pandas
+
+    3. Open an Anaconda Prompt and create a new environment. Cd to the folder containing the requirements file and run the following command: conda create --name env_si [--file  requirements.txt ].
+
+    4. Activate environment: conda activate env_si. When an environment is activated, you will see its name on the left. To deactivate, you can run conda deactivate (don’t do that now)
+
+    5. When you need to install addititional packages  in the environment
+       conda install scikit-learn 
+       or 
+       pip install scikit-learn
+
+    6. Open the Jupyter notebook (it’s recommended to cd into the directory where you saved your ipynb file so that you don’t have to look for it) by running the command: jupyter-lab
+       
+WHEN you need to remove an environment, you can use 
+       conda remove --name env_si --all
+       
